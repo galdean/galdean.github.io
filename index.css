@@ -13,7 +13,7 @@ video + p, img + p{
 }
 h1{font-size: 36px;}
 .parallax{
-	background-image: url(photoshop_fun/trial1.png);
+	background-image: url(trial1.png);
 	height: 680px;
 	background-attachment: fixed;
 	background-size: 96%;
