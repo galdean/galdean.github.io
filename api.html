@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>api fun</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript">
+/*****************************IMPORTANT*****************************************/
+/*This works on my Safari but not chrome*/
+	/*https://dev.to/asaoluelijah/text-to-speech-in-3-lines-of-javascript-b8h#:~:text=var%20msg%20%3D%20new%20SpeechSynthesisUtterance()%3B,speechSynthesis.*/
+/*****************************IMPORTANT*****************************************/
+	if("speechSynthesis" in window) {
+		/*all is good fam*/
+	}
+	else {
+		alert("Browser does not support text to speech!");
+	}
+$(document).ready(function(){
+	$("#click").click(function(){
+		var thingToSpeek = new SpeechSynthesisUtterance();
+		thingToSpeek.text = $("#text").val();
+
+	window.speechSynthesis.speak(thingToSpeek);
+	});
+});
+
+
+</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row hello"></div>
+		<div class="row banner">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-8 picture-top">
+				<div class="row">
+					<h1 class="col-lg-12 center"><br>Fun Widgets Page<br></h1>
+					<h4 class="left col-lg-12"><hr><br>Text-to-Speech Widget<br><br></h4>
+					<input type="text" class="col-lg-4" name="textbox1" id="text">
+					<button id="click" class="btn btn-light btn-lg col-lg-2">Click Here!</button>
+					<div class="col-lg-6"></div>
+					<h4 class="left col-lg-12"><hr><br>Text-to-Speech Widget<br><br></h4>
+					<input type="text" class="col-lg-4" name="textbox1" id="text">
+					<button id="click" class="btn btn-light btn-lg col-lg-2">Click Here!</button>
+					<div class="col-lg-6"></div>
+					<h4 class="left col-lg-12"><hr><br>Text-to-Speech Widget<br><br></h4>
+					<input type="text" class="col-lg-4" name="textbox1" id="text">
+					<button id="click" class="btn btn-light btn-lg col-lg-2">Click Here!</button>
+					<div class="col-lg-6"></div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<nav class="center">
+				<a class="options" href="index.html">home</a>
+				<a class="options">works</a>
+				<a href="api.html" class="options"> widgets</a>
+				<a class="options">resume</a>
+				<a class="options">designs</a>
+				</nav>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
