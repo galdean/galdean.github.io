@@ -1,0 +1,141 @@
+/*.pink{
+		background-color: #fff4f2;
+}
+.blue{
+		background-color: #c3fbf4;
+}*/
+html, body{
+	height: 100%;
+	color: #0C0032;
+}
+body{
+	background-color: #282828;
+}
+h1{
+	font-weight: normal;
+	text-align: center;
+}
+hr{
+	border: none;
+}
+@media screen and (min-width: 730px) {
+	h1{
+		font-size: 75px;
+	}
+	h2{
+		font-size: 30px;
+	}
+	p.portfolio{
+	font-size: 28px;
+	}
+}
+@media screen  and (max-width: 729px) {
+	h1{
+		font-size: 50px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	p{
+		font-size: 12px;
+	}
+	p.portfolio{
+	font-size: 19px;
+	}
+	
+}
+h2{
+	color: #3500D3;
+	text-align: center;
+	background-color: black;
+	width: 20%;
+	margin: 0 auto; 
+	border-radius: 4px;
+	box-shadow: 6px 3px 3px rgba(0,0,0,.66);
+}
+.jumbotron{
+	background: linear-gradient(to bottom right, #282828 32%, #0C0032 0%);
+	height: 100%;
+	color: grey;
+	border-bottom: solid black thick;
+	padding-top: 22%;
+	margin-bottom: 0%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.emphasis{
+	color: #3500D3;
+	text-shadow: 10px 5px 5px black;
+}
+.bold{
+	font-weight: bold;
+}
+.center{
+	text-align: center;
+}
+.navbar {
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+	margin-bottom: 0;
+	position: fixed;
+	width: 100%;
+	margin: auto;
+	z-index: 1;
+	background-color: black;
+ }
+.btn-navbar {
+  color:#3500D3;
+  font-size: 25px;
+
+}
+
+ li a{
+ 	margin-right: 10px;
+ 	color: grey;
+}
+ .goToProjectsBtn{
+ 	margin-top: 14px;
+ 	background-color: none;
+ 	color: grey;
+ 	border: solid black normal;
+	box-shadow: 10px 5px 5px black;
+ }  
+ 
+footer {
+	/* Add a gray background color and some padding to the footer */
+    background-color: rgba(0,0,0, 0.84);
+    color: grey;
+    padding: 25px;
+}
+.project_notes{
+	float: left;
+}
+.project_notes{
+	width: 40%;
+	margin-left: 10%;
+	margin-right: 1%;
+	overflow: auto;
+}
+a{
+	color: #3500D3;
+}
+.card{
+	width: 100%;
+	background-color: #0C0032;
+	box-shadow: 10px 5px 5px black;
+	color: grey;
+	border: solid black thin;
+}
+.no-border{
+	border: none;
+}
+.card-img-top, .card-img-bottom{
+	width: 100%;
+}
+.card-columns{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
