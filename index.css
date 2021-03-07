@@ -6,7 +6,7 @@
 }*/
 html, body{
 	height: 100%;
-	color: #0C0032;
+	scroll-behavior: smooth;
 }
 body{
 	background-color: #282828;
@@ -18,7 +18,7 @@ h1{
 hr{
 	border: none;
 }
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 800px) {
 	h1{
 		font-size: 75px;
 	}
@@ -28,21 +28,42 @@ hr{
 	p.portfolio{
 	font-size: 28px;
 	}
+	.text-center{
+		position: relative;
+		bottom: 15%;
+	}
 }
-@media screen  and (max-width: 729px) {
+@media screen  and (max-width: 799px) {
+	h1{
+		font-size: 55px;
+	}
+	h2{
+		font-size: 21px;
+	}
+	.card-columns{
+		-webkit-column-count: 2;
+		-mox-colum-count: 2;
+		column-count: 2;
+	}
+}
+@media screen and (max-width: 500px){
 	h1{
 		font-size: 50px;
 	}
 	h2{
-		font-size: 20px;
+		font-size: 16px;
 	}
 	p{
 		font-size: 12px;
 	}
 	p.portfolio{
 	font-size: 19px;
+	}	
+	.card-columns{
+		-webkit-column-count: 1;
+		-mox-colum-count: 1;
+		column-count: 1;
 	}
-	
 }
 h2{
 	color: #3500D3;
@@ -53,17 +74,38 @@ h2{
 	border-radius: 4px;
 	box-shadow: 6px 3px 3px rgba(0,0,0,.66);
 }
+hr{
+	padding-top: 5%;
+}
+ul{
+	list-style-type: circle;
+	padding-left: 1.25rem;
+}
+ul li{
+	margin-bottom: .40rem;
+}
+.black{
+	color: black;
+}
 .jumbotron{
 	background: linear-gradient(to bottom right, #282828 32%, #0C0032 0%);
 	height: 100%;
 	color: grey;
-	border-bottom: solid black thick;
 	padding-top: 22%;
 	margin-bottom: 0%;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.parallax{
+	  /* Create the parallax scrolling effect */
+
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .emphasis{
 	color: #3500D3;
@@ -94,20 +136,21 @@ h2{
  	margin-right: 10px;
  	color: grey;
 }
+li a:hover {
+	text-decoration: underline overline grey;
+	color: grey;
+}
  .goToProjectsBtn{
  	margin-top: 14px;
- 	background-color: none;
- 	color: grey;
+ 	background-color: grey;
+ 	color: #282828;
  	border: solid black normal;
 	box-shadow: 10px 5px 5px black;
  }  
- 
-footer {
-	/* Add a gray background color and some padding to the footer */
-    background-color: rgba(0,0,0, 0.84);
-    color: grey;
-    padding: 25px;
-}
+ .goToProjectsBtn:hover{
+ 	background-color: #3500D3;
+ 	color: white;
+ }
 .project_notes{
 	float: left;
 }
@@ -126,6 +169,17 @@ a{
 	box-shadow: 10px 5px 5px black;
 	color: grey;
 	border: solid black thin;
+	border-radius: 3%;
+	overflow: hidden;
+}
+.clickable:hover{
+	color: #0C0032;
+	background-color: grey;
+	border: solid grey normal;
+}
+img{
+	opacity: 92%;
+	border-radius: 3%;
 }
 .no-border{
 	border: none;
@@ -134,8 +188,8 @@ a{
 	width: 100%;
 }
 .card-columns{
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 10%;
+	margin-right: 10%;
 	margin-top: 4%;
 	margin-bottom: 4%;
 }
