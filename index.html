@@ -27,11 +27,9 @@
     
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">About Me</a></li>
-        <li class="active"><a href="#">Projects</a></li>
-        <li class="active"><a href="#">Resume</a></li>
-        <li class="active"><a href="">Contact Me</a></li>
-        
+        <li class="active"><a href="#about-me">About Me</a></li>
+        <li class="active"><a href="#projects">Projects</a></li>
+        <li class="active"><a href="/assignment_code/2021_Galdean_resume.pdf" target="_blank">Resume</a></li>
       </ul>
       
     </div>
@@ -40,110 +38,113 @@
 <!------------------------------------------------------------------------------------------------->
 
 
-<div class="jumbotron container-fluid">
+<div class="jumbotron container-fluid parallax">
   <div class="container text-center">
         <h1><span id="name" class="bold emphasis"></span></h1>
         <p class="portfolio center">Welcome to my <span class="bold">web development</span><br> and <span class="bold">UI/UX design</span> portfolio!</p>
-        <a href="#projects"><button type="button" class="btn goToProjectsBtn">Go to Projects</button></a>
+        <a href="#projects"><button type="button" class="bold btn goToProjectsBtn">Go to Projects</button></a>
   </div>
 </div>
 <!------------------------------------------------------------------------------------------------->
+
 <!------------------------------------------------------------------------------------------------->
+<hr id="projects">
+<h2>Projects</h2>
+<p class="black center">Click on any project to see it in person</p>
+  <div class="card-columns">
+    <div class="card img-fluid clickable">
+      <div class="card-body">
+        <h4>Figma UI/UX Design Project</h4>
+        <p>A class project in which I created a look-and-feel-prototype using Figma. The goal was to create a site that teaches a very specific subject to a chosen target audience. The focus was on going through the user-experience design process (defining user, user goals, wireframes, mood boards, mock-ups, etc.) to see how a user would interact with the site rather than assuming users would know exactly how to use the site and in order to catch any overlooked issues.</p>  
+        <a href="https://youtu.be/Lfd1o5QWBto" class="stretched-link" target="_blank"><img src="assignment_code/screenshots/figma.png" class="card-img-bottom" alt=""></a>
+      </div>
+    </div>
+      <div class="card img-fluid clickable">
+      <div class="card-body">
+        <h4 class="card-title">Paper Sales Log Using Autocomplete Widget</h4>
+        <p>This site is for a fictional paper company to log paper sales, see previous sales, and delete sales. Implemented in HTML, CSS, Bootstrap, JavaScript, and jQuery without a back-end. The client box had jQuery autocomplete populated with a few names. New names entered by the user are added to the autocomplete list and appear as suggestions the next time the user clicks on the name entry box. Error checking and warnings are included when submitting sales. Cursor bounces back and clears data.<a href="http://coms4170.cs.columbia.edu/2020-spring/hw/hw4/HW4.pdf">here</a>.</p>
+        <a class="stretched-link" target="_blank" href="assignment_code/problem1.html"><img src="assignment_code/screenshots/paper_company.png" class="card-img-bottom"></a>
+      </div>
+    </div>
+      <div class="card img-fluid clickable">
+      <div class="card-body">
+        <h4 class="card-title">Hackathon Database (React Back-end and Frontend Data manipulation)</h4>
+        <p>This site is intended for users interested in finding hackathons and information about them. Using, Flask, HTML, CSS, jQuery, and Bootstrap, this webpage allows users to interact with data by creating new data, viewing data, and searching the data. I used a Flask server in which I created a database which holds researched info on hackathons in the United States. New data created by the user would be added to the server, so the entry would still appear even if the page was refreshed. The search function finds key words in the title or summary and highlights the keywords in each of the results on the results page. The main page displays the newest 30 entries. Error checking as well as informing the user at every step that their actions succeeded, failed are included as part of the UI/UX focus. Watch the video to see site work plus more details.</p>
+        <a class="stretched-link" target="_blank" href="https://youtu.be/CTG0aNlxt7k"><img src="screenshots/hw_7.png" class="card-img-bottom"></a>
+      </div>
+    </div>
+    <div class="card img-fluid clickable">
+      <div class="card-body">
+        <h4 class="card-title">Twitter Home Layout Bootstrap4 Recreation</h4>
+        <p>Using only basic HTML elements such as divs, spans, and imgs, I recreated a simple home layout that renders the same layout for different screen sizes.</p>
+        <a class="stretched-link" target="_blank" href="assignment_code/1_twitter-home.html"><img src="assignment_code/screenshots/twitter_home.png" class="card-img-bottom"></a>
+      </div>
+    </div>
+      <div class="card img-fluid clickable">
+      <div class="card-body">
+        <h4 class="card-title">Drag & Drop to edit a Party Planning Committe</h4>
+        <p>If you click on this card to see the code in action, note that you need to double click on a person to grab them then you need to drop the name at the heading of the group you wish to place the person in. This page used jQuery Draggable and Droppable events to implement an interface where a user can drag names from non-party-planning-committee aka non-ppc to PPC and vice versa. UI/UX focused on cues to show elements are clickable and draggable by changing colors and shades.</p>
+        <a class="stretched-link" target="_blank" href="assignment_code/2_ppc.html"><img src="assignment_code/screenshots/party_planning.png" class="card-img-bottom"></a>
+      </div>
+    </div>
+    <div class="card img-fluid clickable">
+      <div class="card-body">
+        <h4 class="card-title">Post a Tweet</h4>
+        <p>Using HTML, JavaScript, and jQuery, this site allows users to post a tweet that will appear at the top of a list of older tweets. The focus of this project was to provide feedback to the users such as changing the number of characters left to write, using red and blocking the use of the post button when character count was exceeded, showing the new tweet in correct order, once posted: the old entry disappears but the cursor returns, etc.</p>
+        <a href="assignment_code/javascript_and_feedback.html" class="stretched-link" target="_blank"><img src="assignment_code/screenshots/tweet_post.png" class="card-img-bottom" alt=""></a>
+      </div> 
+    </div>
+
+  </div>
 <hr>
+
+<!------------------------------------------------------------------------------------------------->
+<hr id="about-me">
   <h2>About Me</h2>
   <div class="card-columns">
     <div class="card img-fluid no-border">
-      <img src="screenshots/columbia.png" class="card-img-top">
+      <img src="screenshots/languages.jpg" class="card-img-top">
       <div class="card-body">
-        <h4 class="card-title">Columbia University '22</h4>
-        <Columbia University 2022</ul>
-        Working toward computer science BA degree<br>
-        Interest in UX/UI design<br>
-        Community Chair 2019-2020 for Women In Computer Science (WiCS)<br>
-        Questbridge College Match Scholarship Recipient 2016<br>
+        <h4 class="card-title">Languages, Software, Frameworks, and Libraries</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>Javascript</li>
+            <li>Java and C</li>
+            <li>Photoshop</li>
+            <li>Beginner Flask</li>
+        </ul>
       </div>
     </div>
     <div class="card img-fluid no-border">
       <img class="card-img-top" src="screenshots/date_me.jpg" alt="Picture of Ruby Galdean">
       <div class="card-body">
         <h4 class="card-title">Who I Am</h4>
-        <p>I'm your typical small town girl who moves to New York to pursue her big dreams. Don't
-        worry, I won't burst into song (at least not in public). During this pandemic, you can find
-        me in Colorado </p>
-      </div>
-    </div>
-    <div class="card img-fluid no-border">
-      <img src="screenshots/languages.jpg" class="card-img-top">
-      <div class="card-body">
-        <h4 class="card-title">Who I Am</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Aut quo corporis est praesentium facilis at reprehenderit perferendis incidunt eveniet impedit ad tenetur assumenda, facere exercitationem architecto doloribus nobis, commodi cupiditate!</p>
-      </div>
-    </div>    
-  </div>
-
-
-<!------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------->
-<hr id="projects">
-<h2>Projects</h2>
-  <div class="card-columns">
-    <div class="card img-fluid">
-      <div class="card-body">
-        <h4 class="card-title">Old Tinder CSS Recreation</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Molestias quia neque ex? Alias quibusdam blanditiis illo qui natus voluptates.</p>
-        <img src="screenshots/tinder.png" class="card-img-bottom">
-      </div>
-    </div>
-      <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">School</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Molestias quia neque ex? Alias quibusdam blanditiis illo qui natus voluptates!</p>
-        <img src="screenshots/columbia_1.png" class="card-img-bottom">
-      </div>
-    </div>
-      <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Old Tinder CSS Recreation</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Molestias quia neque ex? Alias quibusdam blanditiis illo qui natus voluptates, accusantium, commodi voluptatibus!</p>
-        <img src="screenshots/hw_7.png" class="card-img-bottom">
-      </div>
-    </div>  
-
-
-    <div class="card img-fluid">
-      <div class="card-body">
-        <h4 class="card-title">Old Tinder CSS Recreation</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Molestias quia neque ex? Alias quibusdam blanditiis illo qui natus voluptates.</p>
-        <img src="screenshots/tinder.png" class="card-img-bottom">
-      </div>
-    </div>
-      <div class="card img-fluid">
-      <div class="card-body">
-        <h4 class="card-title">School</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Molestias quia neque ex? Alias quibusdam blanditiis illo qui natus voluptates!</p>
-        <img src="screenshots/columbia_1.png" class="card-img-bottom">
-      </div>
-    </div>
-      <div class="card img-fluid">
-      <div class="card-body">
-        <h4 class="card-title">Old Tinder CSS Recreation</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Molestias quia neque ex? Alias quibusdam blanditiis illo qui natus voluptates, accusantium, commodi voluptatibus!</p>
-      <img src="screenshots/hw_7.png" class="card-img-bottom">
+          <ul>
+            <li>Front-end web developer</li>
+            <li>Interest in UX/UI design</li>
+            <li>Rising undergrad senior</li>
+            <li>Seeking internship or entry position</li>
+            <li>Colorado born and raised but studying in New York</li>
+        </ul>
       </div>
     </div> 
-
-
-
-
+    <div class="card img-fluid no-border">
+      <img src="screenshots/columbia.png" class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title">Columbia University '22</h4>
+        <ul>
+          <li>Working toward computer science BA degree</li>
+          <li>Community Chair 2019-2020 for Women In Computer Science (WiCS)</li>
+          <li>Questbridge College Match Scholarship Recipient 2016</li>
+        </ul>
+      </div>
+    </div>   
   </div>
-<hr>
 
 
-
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-  <span>Photo by <a href="https://unsplash.com/@lum3n?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">LUM3N</a> on <a href="https://unsplash.com/s/photos/aesthetic-keyboard-pink?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-</footer>
+<!------------------------------------------------------------------------------------------------->
 
 </body>
 </html>
