@@ -48,4 +48,16 @@ $(document).ready(function(){
   $(".right").click(function(){
     $("#myCarousel").carousel("next");
   });
+
+
+    // Smooth scrolling when clicking on a button with the class "scroll-btn"
+    $("#projects").on("click", function(e) {
+      e.preventDefault();
+      var target = $(this).attr("href");
+      $("html, body").animate({
+        scrollTop: $(target).offset().top
+      }, 800);
+    });
+
+
 });
