@@ -1,0 +1,249 @@
+.pink {
+	background-color: #fff4f2;
+}
+
+.blue {
+	background-color: #c3fbf4;
+}
+
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+html,
+body {
+	height: 100%;
+	scroll-behavior: smooth;
+	color: rgb(142, 151, 248);
+}
+
+body {
+	width: 87%;
+	margin: 0 auto;
+	box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.66);
+}
+
+h1 {
+	font-weight: normal;
+	text-align: center;
+}
+
+hr {
+	border: none;
+}
+
+@media screen {
+	h1 {
+		font-size: 75px;
+	}
+
+	h2 {
+		font-size: 2.4rem;
+	}
+
+	p.portfolio {
+		font-size: 1.2rem;
+	}
+
+	.text-center {
+		position: relative;
+		bottom: 15%;
+	}
+	
+}
+
+h2 {
+	text-align: center;
+	background-color: black;
+	width: 20%;
+	margin: 0 auto;
+	border-radius: 4px;
+	box-shadow: 6px 3px 3px rgba(0, 0, 0, 0.66);
+}
+
+hr {
+	padding-top: 5%;
+}
+
+ul {
+	list-style-type: circle;
+	padding-left: 1.25rem;
+}
+
+ul li {
+	margin-bottom: 0.40rem;
+}
+
+.black {
+	color: black;
+}
+
+.jumbotron {
+
+	background-image: 
+		linear-gradient(to bottom right, rgba(157, 162, 210, 0.7) 22%, rgba(12, 0, 50, 0.7) 0%),
+		url('screenshots/mountains.jpg');
+	background-size: cover;
+	background-position: center;
+
+	 background-size: 180% 180%;
+  animation: gradient-animation 24s ease infinite;
+
+	height: 100%;
+	color: rgb(215, 210, 210);
+	padding-top: 22%;
+	margin-bottom: 0%;
+	margin-top: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parallax {
+	height: 100%;
+	margin-top: 1%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.emphasis {
+	color: rgb(142, 151, 248);
+	text-shadow: 10px 5px 5px black;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	color: rgb(142, 151, 248);
+}
+
+.navbar-brand:hover {
+	color: white;
+}
+
+.navbar {
+	/* Remove the navbar's default margin-bottom and rounded borders */
+	margin-bottom: 0;
+	margin-top: 0%;
+	position: fixed;
+	width: 90%;
+	margin-left: auto;
+	z-index: 1;
+	background-color: black;
+}
+
+.btn-navbar {
+	font-size: 25px;
+}
+
+li a {
+	margin-right: 10px;
+	color: rgb(142, 151, 248);
+}
+
+li a:hover {
+	text-decoration: rgb(215, 210, 210);
+	color: rgb(245, 243, 252);
+}
+
+.goToProjectsBtn {
+	margin-top: 14px;
+	background-color: #8e97f8;
+	color: black;
+	border: solid black normal;
+	box-shadow: 10px 5px 5px black;
+}
+
+.goToProjectsBtn:hover {
+	background-color: #6c3bff;
+	color: white;
+}
+
+.project_notes {
+	float: left;
+}
+
+.project_notes {
+	width: 40%;
+	margin-left: 10%;
+	margin-right: 1%;
+	overflow: auto;
+}
+
+a {
+	color: #3500d3a6;
+}
+
+
+.card {
+	width: 100%;
+	height: 100%;
+	background-color: #0C0032;
+	box-shadow: 10px 5px 5px black;
+	border: solid black thin;
+	border-radius: 3%;
+	overflow: hidden;
+}
+.clickable:hover {
+	color: rgb(250, 250, 250);
+	background-color: #6c3bff;
+	border: solid grey normal;
+}
+
+img {
+	opacity: 92%;
+	border-radius: 3%;
+	float: right;
+	margin-left: 1rem;
+}
+
+.no-border {
+	border: none;
+}
+
+
+.row {
+	margin: 0 auto;
+}
+
+.card-img-top,
+.card-img-bottom {
+	width: 45%;
+}
+
+.me_div{
+	display: flex;
+}
+#me_pic {
+	width: 25%;
+	height: 40%;
+	margin-right: 5%;
+}
+
+.right_pic_text{
+	width: 60%;
+	height:40%;
+}
+
+ul {
+	width: 50%;
+	float: left;
+}
