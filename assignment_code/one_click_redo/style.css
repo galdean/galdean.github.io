@@ -1,0 +1,26 @@
+.vertical_line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: .5dvh;
+  background-color: red;
+  z-index: 9999;
+  display: block; /* set to none with js to turn off*/
+  /* “Pretend this element doesn’t exist when clicking or detecting mouse targets.” */
+  pointer-events: none; 
+}
+.horizontal_line{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: .5dvh;
+    background-color: blue;
+    z-index: 9999;
+    display: block;
+    pointer-events: none;
+}
+keyboard{
+    z-index: 10000;;
+}

@@ -229,6 +229,8 @@ li a:hover {
     .meta {
       transform: translateY(0);
     }
+    width: calc(var(--card-width) + 12rem);
+    transition: width 1.2s ease;
   }
   
   .meta {
@@ -331,8 +333,6 @@ img {
   transition: inset 0.5s linear;
   
   &::after {
-    font-family: "Material Symbols Outlined";
-    content: "navigation";
   }
 
 }

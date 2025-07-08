@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "One-Click extension",
+  "description": "This extension provides haptic accessibillity by only needing to use the space bar to navigate the webpage, click on links, scrolls, and type",
+  "version": "1.0",
+  "permissions": [
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+   "css": ["style.css"]
+    }
+  ]
+}
