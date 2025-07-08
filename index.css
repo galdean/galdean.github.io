@@ -3,6 +3,7 @@ html, body{
     height: 100%;
     margin: 0;
     background-color: rgb(95, 107, 119);
+    font-weight:lighter; !important; 
 }
 @keyframes movingIllusion {
     from {background-position: 0% 50%;} to {background-position: 100% 50%;}
@@ -23,7 +24,7 @@ html, body{
     left: 1.5%;
     border-radius: 2%;
 
-    opacity: .3;
+    opacity: .35;
 
 
 }
@@ -35,7 +36,6 @@ html, body{
     z-index: 9;
     color: rgb(102, 0, 128);
 
-    font-weight:lighter;
 }
 .name>h1{
     font-size: 11vh;
@@ -46,6 +46,8 @@ html, body{
 
 .navbar-brand {
     color: rgb(102, 0, 128);
+
+  font-size: 2.5dvh;
 }
 
 .navbar-brand:hover {
@@ -53,16 +55,18 @@ html, body{
 }
 
 .navbar {
+
+  font-size: 2.5dvh;
 	/* Remove the navbar's default margin-bottom and rounded borders */
 	margin-bottom: 0;
 	margin-top: 0%;
-    left: 0%;
+    left: 1%;
 	position: fixed;
 	width: 80%;
   margin: 5dvw 5dvw ;
 	z-index: 1;
 	background-color: none;
-  font-size: 2.2dvh;
+  text-shadow: #333 1px 1px 2px;
 }
 
 .btn-navbar {
@@ -96,12 +100,12 @@ li a:hover {
   counter-reset: day;
   
   /*  "break out" of body padding  */
-  width: 98dvw;;
-  margin-left: calc(-1 * var(--body-padding));
+  width: 90dvw;;
+  margin-left: 0%;
   
   /*  hide scrollbar  */
   scrollbar-width: none;
-  
+
   /*  smooth scrolling  */
   scroll-behavior: smooth;
   
@@ -212,6 +216,10 @@ li a:hover {
   scroll-snap-align: center;
   container-type: scroll-state;
 
+    opacity: 0.75;
+
+    transition: width 2s ease;
+
   
   img {
     width: 100%;
@@ -220,7 +228,6 @@ li a:hover {
     object-fit: contain;
     object-position: bottom;
     border-radius: 4%;
-    opacity: 0.85;
   }
   
   &:hover,
@@ -228,10 +235,12 @@ li a:hover {
     .meta {
       transform: translateY(0);
     }
+ 
     width: calc(var(--card-width) + 12rem);
-    transition: width 1.2s ease;
+
+
   }
-  
+
   .meta {
     position: absolute;
     bottom: 0;
@@ -240,7 +249,6 @@ li a:hover {
     background: rgb(102, 0, 128);
     color: rgb(220, 184, 236);
     padding: 1rem;
-    transition: transform 0.5s ease;
     
     @container scroll-state(snapped: x) {
       transform: translateY(0);
@@ -264,35 +272,6 @@ li a:hover {
 
 }
 
-.flight,
-.train,
-.car {
-  &::after {
-    content: '';
-    position: absolute;
-    font-family: "Material Symbols Outlined";
-    font-family: "Material Symbols Outlined";
-    font-variation-settings: "wght" 100;
-    color: white;
-    background: #222;
-    border-radius: 100% 0 0 100%;
-    top: 0.5rem;
-    right: 0;
-    padding: 0.25rem;
-  }
-}
-
-.flight::after {
-  content: "travel" / "Flight";
-}
-
-.train::after {
-  content: "train" / "Train";
-}
-
-.car::after {
-  content: "directions_car" / "Car";
-}
 
 h1 {
   font-size: 1.5rem;
@@ -321,20 +300,6 @@ img {
   } 
 }
 
-.plane {
-  position: fixed;
-  width: 1.5rem;
-  display: flex;
-  justify-content: center;
-  position-anchor: --active-target;
-  inset: anchor(inside);
-  margin-top: anchor-size();
-  transition: inset 0.5s linear;
-  
-  &::after {
-  }
-
-}
 
 #bottom_projects{
     position:absolute;
@@ -346,4 +311,82 @@ img {
 div.meta{
 
     border-top-right-radius: 30%;
+}
+.left {
+    position: fixed;
+    left: 8.2%;
+    bottom: 32%;
+    font-size: 1.5rem;
+    font-size: 2.5dvh;;
+    color: rgb(102, 0, 128);
+
+  text-shadow: #333 1px 1px 2px;
+}
+
+.about_me_container {
+  position: fixed;
+  top: 18%;
+  left: 8%;
+  width: 84%;
+  font-size: 2.5dvh;
+  color: rgb(102, 0, 128);
+  text-shadow: #333 1px 1px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 4%;
+
+    border-radius: 2%;
+}
+
+.about_me_container h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.about_me_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap: 2rem;
+}
+
+.about_me_text {
+  width: 60%;
+}
+
+#prof_pic {
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about_me_links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  font-size: 2.5dvh;
+}
+.about_me_links a{
+  font-size: 2.5dvh;
+  color: rgb(102, 0, 128);
+  text-shadow: #333 1px 1px 2px;
+} 
+.about_me_links a:hover{
+  color: white;
+}
+.about_me_links img {
+  width: 4dvh;
+  height: 4dvh;
+  transition: transform 0.2s ease-in-out;
+}
+
+.about_me_links img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
