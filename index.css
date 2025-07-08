@@ -45,7 +45,7 @@ html, body{
 }
 
 .navbar-brand {
-	color: rgb(142, 151, 248);
+    color: rgb(102, 0, 128);
 }
 
 .navbar-brand:hover {
@@ -56,22 +56,21 @@ html, body{
 	/* Remove the navbar's default margin-bottom and rounded borders */
 	margin-bottom: 0;
 	margin-top: 0%;
-    left: 10%;
+    left: 0%;
 	position: fixed;
-	width: 100%;
-    height: 10%;;
-	margin-left: auto;
+	width: 80%;
+  margin: 5dvw 5dvw ;
 	z-index: 1;
-	background-color: black;
+	background-color: none;
+  font-size: 2.2dvh;
 }
 
 .btn-navbar {
-	font-size: 25px;
 }
 
 li a {
 	padding: 10px;
-	color: rgb(142, 151, 248);
+    color: rgb(102, 0, 128);
 }
 
 li a:hover {
