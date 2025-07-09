@@ -100,8 +100,9 @@ li a:hover {
   counter-reset: day;
   
   /*  "break out" of body padding  */
-  width: 90dvw;;
+  width: 92dvw;;
   margin-left: 0%;
+  margin-right: 0%;
   
   /*  hide scrollbar  */
   scrollbar-width: none;
@@ -328,16 +329,18 @@ div.meta{
   top: 18%;
   left: 8%;
   width: 84%;
-  font-size: 2.5dvh;
+  font-size: 2.2dvh; 
+  font-weight: bold;
+
   color: rgb(102, 0, 128);
-  text-shadow: #333 1px 1px 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  background-color: rgba(255, 255, 255, 0.35);
+  /*background-color: rgba(255, 255, 255, 0.35);*/
   padding: 4%;
 
+  background-color: rgba(255, 255, 255, 0.14);
     border-radius: 2%;
 }
 
@@ -356,11 +359,11 @@ div.meta{
 }
 
 .about_me_text {
-  width: 60%;
+  width: 55%;
 }
 
 #prof_pic {
-  width: 35%;
+  width: 40%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
