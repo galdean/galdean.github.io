@@ -340,7 +340,7 @@ div.meta{
         top: 26%;
     }
     #bottom_projects{
-        top: 50%;
+        top: 52%;
         width: 100%;
     }
     .left{
@@ -355,8 +355,70 @@ div.meta{
     .meta .desc{
       font-size: smaller;
       padding: .3dvh;
-      line-height: 0.8dvh;
+      line-height: 01.2dvh;
     }
+      .day-card:hover,
+      .day-card:focus {
+        width: calc(var(--card-width) + 6rem);
+      }
+/* make the bar span the screen */
+nav.navbar,
+.navbar {
+  position: fixed;        /* optional if you want it stuck to top */
+  top: 0; left: 0; right: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 9999;
+}
+/* ---------------------------------------------------*/
+  /* Navbar flexbox issues on small screens */
+/* ---------------------------------------------------*/
+
+    /* kill side padding from Bootstrap container */
+    .navbar .container-fluid { padding-left: 0; padding-right: 0; }
+
+    /* keep the collapse visible on mobile */
+    #myNavbar.collapse,
+    #myNavbar.collapsing { display: flex !important; }
+
+    /* make the inner collapse take full width */
+    #myNavbar { width: 100%; }
+
+    /* distribute items across the full width */
+    #myNavbar .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 0;
+      margin: 0;
+      margin-top: 6%;
+      padding: 0;
+      width: 100%;
+      /* choose ONE: */
+      /* justify-content: space-between;  /* spread edge-to-edge */ 
+      /* justify-content: center;         /* centered cluster */ 
+      justify-content: flex-end;          /* right aligned (was 'right', which is invalid) */
+    }
+
+    /* make each item as tight or as even as you want */
+    #myNavbar .nav-item { margin: 0; }
+
+    /* compact links; remove width so they don’t act like blocks */
+    #myNavbar .nav-link {  /* not microscopic :) */
+      padding: 0.05rem 0.5rem;
+      width: auto;
+      white-space: nowrap;
+    }
+        .navbar, .navbar * {
+      font-size: inherit !important;
+    }
+    .navbar-nav .nav-link {
+      font-size: 0.35rem !important;
+    }
+
+
+/* ---------------------------------------------------*/
+  /* Navbar fixes end */
+/* ---------------------------------------------------*/
 
 }
     .meta span{
