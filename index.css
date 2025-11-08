@@ -44,6 +44,7 @@ html, body{
     text-shadow: 1px 1px 10px rgb(8, 7, 7);
 }
 
+
 .navbar-brand {
     color: rgb(102, 0, 128);
 
@@ -151,7 +152,7 @@ li a:hover {
 }
 
 .day-card {
-  width: var(--card-width);
+  width: 24dvw;
   position: relative;
   overflow: hidden;
   counter-increment: day-num;
@@ -178,7 +179,7 @@ li a:hover {
       transform: translateY(0);
     }
  
-    width: calc(var(--card-width) + 12rem);
+    width: calc(var(--card-width) + 22rem);
 
 
   }
@@ -187,19 +188,16 @@ li a:hover {
     position: absolute;
     bottom: 0;
     width: calc(100% - 2rem);
-    transform: translateY(calc(100% - 3rem));
     background: rgb(102, 0, 128);
     color: rgb(220, 184, 236);
-    padding: 1rem;
     
-    @container scroll-state(snapped: x) {
-      transform: translateY(0);
-    }
+   
   }
   
   .desc {
-    line-height: 2dvw;
+    line-height: 1.2rem;
     font-weight: normal;
+    padding: 1dvh;
   }
   
   h2 {
@@ -207,8 +205,6 @@ li a:hover {
     margin-bottom: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1rem;
   }
   
 
@@ -334,3 +330,37 @@ div.meta{
   transform: scale(1.2);
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 767px) {
+    .name>h1{
+      font-size: 7vh;
+    }
+    .name{
+        top: 26%;
+    }
+    #bottom_projects{
+        top: 50%;
+        width: 100%;
+    }
+    .left{
+        bottom: 48%;
+    }
+    .day-card{
+        width: 80dvw;
+    }
+    .meta span{
+      font-weight: 600;
+    }
+    .meta .desc{
+      font-size: smaller;
+      padding: .3dvh;
+      line-height: 0.8dvh;
+    }
+
+}
+    .meta span{
+      font-weight: bolder;
+      color: white;
+      line-height: 3dvh;
+    }
