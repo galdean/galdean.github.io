@@ -267,8 +267,8 @@ div.meta{
   top: 18%;
   left: 8%;
   width: 84%;
-  font-size: 2.2dvh; 
-  font-weight: bold;
+  font-size: 2.4dvh; 
+  font-weight: normal;
 
   color: rgb(102, 0, 128);
   display: flex;
@@ -278,11 +278,15 @@ div.meta{
   /*background-color: rgba(255, 255, 255, 0.35);*/
   padding: 4%;
 
-  background-color: rgba(255, 255, 255, 0.14);
-    border-radius: 2%;
+  background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 5px;
+
+  box-shadow: black 3px 3px 9px;
+  text-shadow: black .5px .5px .5px;
 }
 
-.about_me_container h1 {
+.about_me_container > h1 {
+  width: 100%;
   text-align: center;
   margin: 0;
   font-size: 2.5rem;
@@ -293,15 +297,15 @@ div.meta{
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .about_me_text {
-  width: 55%;
+  width: 66;
 }
 
 #prof_pic {
-  width: 40%;
+  width: 26%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
@@ -342,11 +346,11 @@ div.meta{
         top: 26%;
     }
     #bottom_projects{
-        top: 46%;
+        top: 49%;
         width: 100%;
     }
     .left{
-      bottom: 51%;
+      bottom: 49%;
       color: rgb(102, 0, 128);
       text-shadow: black 1px 1px 2px;
     }
@@ -423,6 +427,31 @@ nav.navbar,
 /* ---------------------------------------------------*/
   /* Navbar fixes end */
 /* ---------------------------------------------------*/
+
+    .about_me_container{
+      font-size: small;
+      display: block !important;
+    }
+    .about_me_container > *{
+      flex-direction: column !important;
+      align-items: center !important;
+      width: 100%;
+    }
+    #prof_pic{
+      width: 50%;
+    }
+    .about_me_text,
+    .about_me_content{
+      width: 100%;
+
+    }
+
+    .left{
+      font-size: large;
+    }
+    .left span{
+      font-size: medium;
+    }
 
 }
     .meta span{
